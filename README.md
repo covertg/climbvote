@@ -19,7 +19,8 @@ The files `votes_food.csv`, `votes_aceg*.csv` hold some phony votes for some pho
 * Candidate names are given in the subequent columns, surrounded by brackets, e.g. [Name].
 
 See below for an example ballot template with Google Forms. Consider setting "Limit to one response per column" for validation.
-![climbvote sample ballot](data/sample_ballot.png)
+
+<img src="data/sample_ballot.png" width="50%">
 
 ## Running elections
 
