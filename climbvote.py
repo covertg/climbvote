@@ -7,10 +7,10 @@ from pyrankvote import Candidate, Ballot
 import sys
 
 # Process arguments nicely
-parser = argparse.ArgumentParser(description='Count an election with multi-winner ranked-choice voting.')
+parser = argparse.ArgumentParser(description='Counts a ranked-choice voting election with potentially multiple winners using Single Transferrable Vote. Prints the count to stdout and saves to file.')
 parser.add_argument('votes_csv', metavar='<csv file>', type=str, help='Path to a CSV file of all the votes (formatted like votes.csv)')
 parser.add_argument('n_seats', metavar='<# seats>', type=int, help='Number of open seats to win')
-parser.add_argument('--output', default=datetime.now().strftime('%Y%m%d_%H%M%S.out'), type=str, help='Name of file to write output (in current directory)')
+parser.add_argument('--output', default=datetime.now().strftime('%Y%m%d_%H%M%S.out'), type=str, help='Name of file to write output. Default is current date and time.')
 args = parser.parse_args()
 
 # Read the votes CSV file, and create a list of candidates based on candidate-names in the CSV header
