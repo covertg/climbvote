@@ -77,8 +77,8 @@ Saved to file 20200423_164805.out
 
 ## More info
 
-We found ranked-choice voting through Single Transferrable Vote desirable for multi-winner elections in order to avoid having to make possibly arbitrary tiebreak decisions. It's also desirable for encouraging voters to put more thought into each candidate and more fairly reflecting voters' preferences. However, it's also complex, and presented wrongly might provoke voters' distrust. For more reading on how the algorithm behind it:
+We found ranked-choice voting through Single Transferrable Vote desirable for multi-winner elections in order to avoid having to make possibly arbitrary tiebreak decisions. It's also desirable for encouraging voters to put more thought into each candidate and for more fairly reflecting voters' preferences. However, it's also complex, and if presented wrongly might provoke voters' distrust. For more reading on how the algorithm works:
 
 * [Wikipedia article on STV](https://en.wikipedia.org/wiki/Single_transferable_vote)
 * [Example walking through the counting steps in a mock election](https://www.rankedchoicevoting.org/how_multi_seat_rcv_works)
-* [PyRankVote library](https://github.com/jontingvold/pyrankvote). Also note that `pyrankvote` can also count with Instant Runoff and Preferential Block voting.
+* [PyRankVote library](https://github.com/jontingvold/pyrankvote). Also note that `pyrankvote` can instead count with Instant Runoff and Preferential Block voting, and changing it in this script would amount to changing one line of code.
